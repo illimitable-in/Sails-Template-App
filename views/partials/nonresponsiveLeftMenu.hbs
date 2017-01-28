@@ -1,0 +1,24 @@
+<!-- Non-responsive main left menu -->
+<div class="ui left fixed vertical inverted menu">
+    <a class="item" href="/">
+        <h4 class="ui grey header">John Doe</h4>
+        <p>Sign Out</p>
+    </a>
+    <a class="{{conditionalPrint pageView '==' 'dashboard' 'active gray '}}item" href="/home.html">
+        Dashboard
+    </a>
+    <a class="{{conditionalPrint pageView '==' 'sales' 'active gray '}}item" href="/sales.html">
+        Sales
+        <div class="ui label">11</div>
+    </a>
+    <a class="{{conditionalPrint pageView 'in' 'products,gallery' 'active gray '}}item" href="/products.html">
+        Products
+        <div class="ui label">2</div>
+    </a>
+    <a class="{{conditionalPrint pageView '==' 'customers' 'active gray '}}item" href="/customers.html">
+        Customers
+    </a>
+    <a class="{{conditionalPrint pageView '==' 'employees' 'active gray '}}item" href="/employees.html">
+        Employees
+    </a>
+</div>
